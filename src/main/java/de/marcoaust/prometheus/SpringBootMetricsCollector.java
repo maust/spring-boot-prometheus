@@ -11,7 +11,7 @@ import io.prometheus.client.Collector;
 
 
 @Component
-public class SpringBootMetricsCollector extends Collector {
+class SpringBootMetricsCollector extends Collector {
   private final Collection<PublicMetrics> publicMetrics;
 
   @Autowired
