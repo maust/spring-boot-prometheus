@@ -5,7 +5,7 @@ Prometheus-Spring-Boot makes it easy to use prometheus with Spring Boot. It expo
 
 ## Usage example
 
-1. Add dependency to your pom.xml
+* Add dependency to your pom.xml
 ```
 <dependency>
     <groupId>de.marcoaust.prometheus</groupId>
@@ -13,7 +13,8 @@ Prometheus-Spring-Boot makes it easy to use prometheus with Spring Boot. It expo
     <version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
-2. Add @EnablePrometheusEndpoint to your spring configuration
+
+* Add @EnablePrometheusEndpoint to your spring configuration
 
 ## Development setup
 
