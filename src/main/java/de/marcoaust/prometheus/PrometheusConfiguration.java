@@ -6,7 +6,7 @@ import org.springframework.boot.actuate.endpoint.PublicMetrics;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan("com.lsm.prometheus")
+@ComponentScan("de.marcoaust.prometheus")
 public class PrometheusConfiguration {
     @Bean
     public SpringBootMetricsCollector springBootMetricsCollector(Collection<PublicMetrics> publicMetrics) {
