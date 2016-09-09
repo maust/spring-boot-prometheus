@@ -9,7 +9,8 @@ branches:
   only:
     - master
 
-script: "[ ${TRAVIS_PULL_REQUEST} = 'false' ] && mvn clean deploy --settings settings.xml || mvn clean verify"
+after_success:
+  - "[ ${TRAVIS_PULL_REQUEST} = 'false' ] && mvn clean deploy --settings settings.xml -DskipTests=true -B || mvn clean verify"
 
 env:
   global:
