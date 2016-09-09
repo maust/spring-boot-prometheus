@@ -9,6 +9,10 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <name>Prometheus for Spring Boot</name>
+    <description>Prometheus-Spring-Boot makes it easy to use Prometheus with Spring Boot. It exposes an /prometheus
+        endpoint with prometheus-compatible metrics just by adding @EnablePrometheusEndpoint to your configuration.
+    </description>
+    <url>https://github.com/maust/prometheus-spring-boot</url>
 
     <licenses>
         <license>
@@ -17,9 +21,21 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <name>Marco Aust</name>
+            <email>github@marcoaust.de</email>
+            <organization>private</organization>
+            <organizationUrl>https://github.com/maust</organizationUrl>
+        </developer>
+    </developers>
+
     <scm>
+        <connection>scm:git:git://github.com/maust/prometheus-spring-boot.git</connection>
+        <developerConnection>scm:git:ssh://github.com:maust/prometheus-spring-boot.git</developerConnection>
         <url>https://github.com/maust/prometheus-spring-boot</url>
     </scm>
+
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -54,5 +70,15 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>oss.sonatype.org</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+        <snapshotRepository>
+            <id>oss.sonatype.org</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
