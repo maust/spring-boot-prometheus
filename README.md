@@ -5,13 +5,12 @@ Prometheus-Spring-Boot makes it easy to use Prometheus with Spring Boot. It expo
 
 ## Usage example
 
-* Check out the project (there is no release yet)
 * Add dependency to your pom.xml
 ```
 <dependency>
     <groupId>de.marcoaust.prometheus</groupId>
     <artifactId>spring-boot-prometheus</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2</version>
 </dependency>
 ```
 
@@ -23,7 +22,8 @@ TBD
 
 ## Release History
 
-TBD
+* 0.0.2 First release to maven central
+* 0.0.1 Initial version in github
 
 ## License
 
