@@ -6,7 +6,7 @@
 
     <groupId>de.marcoaust.prometheus</groupId>
     <artifactId>spring-boot-prometheus</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0-SNAPSHOT</version>
 
     <name>Prometheus for Spring Boot</name>
     <description>Prometheus-Spring-Boot makes it easy to use Prometheus with Spring Boot. It exposes an /prometheus
