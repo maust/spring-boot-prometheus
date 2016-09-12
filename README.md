@@ -10,7 +10,7 @@ Prometheus-Spring-Boot makes it easy to use Prometheus with Spring Boot. It expo
     <dependency>
         <groupId>de.marcoaust.prometheus</groupId>
         <artifactId>spring-boot-prometheus</artifactId>
-        <version>0.0.2</version>
+        <version>0.1.0</version>
     </dependency>
     ```
     You can customize it at runtime through the following properties:
@@ -37,6 +37,7 @@ TBD
 
 ## Release History
 
+* 0.1.0 Improving the configurability (contributed by: Eliezio Oliveira)
 * 0.0.2 First release to maven central
 * 0.0.1 Initial version in github
 
