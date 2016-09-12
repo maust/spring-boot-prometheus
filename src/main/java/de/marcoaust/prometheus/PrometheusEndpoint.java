@@ -19,7 +19,7 @@ class PrometheusEndpoint extends AbstractEndpoint<String> {
 
   private final CollectorRegistry collectorRegistry;
 
-  public PrometheusEndpoint(CollectorRegistry collectorRegistry) {
+  PrometheusEndpoint(CollectorRegistry collectorRegistry) {
     super("prometheus", true /* sensitive */);
     this.collectorRegistry = collectorRegistry;
   }
