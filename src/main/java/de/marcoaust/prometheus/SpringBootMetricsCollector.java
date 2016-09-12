@@ -2,19 +2,15 @@ package de.marcoaust.prometheus;
 
 import java.util.*;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.actuate.endpoint.PublicMetrics;
 import org.springframework.boot.actuate.metrics.Metric;
-import org.springframework.stereotype.Component;
 
 import io.prometheus.client.Collector;
 
 
-@Component
 class SpringBootMetricsCollector extends Collector {
   private final Collection<PublicMetrics> publicMetrics;
 
-  @Autowired
   SpringBootMetricsCollector(Collection<PublicMetrics> publicMetrics) {
     this.publicMetrics = publicMetrics;
   }
@@ -27,8 +23,8 @@ class SpringBootMetricsCollector extends Collector {
         String name = Collector.sanitizeMetricName(metric.getName());
         double value = metric.getValue().doubleValue();
         MetricFamilySamples metricFamilySamples = new MetricFamilySamples(
-                name, Type.GAUGE, name, Collections.singletonList(
-                new MetricFamilySamples.Sample(name, new ArrayList<String>(), new ArrayList<String>(), value)));
+                name, Type.GAUGE, name, Collections.singletonList(new MetricFamilySamples.Sample(
+                    name, Collections.<String>emptyList(), Collections.<String>emptyList(), value)));
         samples.put(name, metricFamilySamples);
       }
     }

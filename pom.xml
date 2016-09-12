@@ -28,6 +28,12 @@
             <organization>private</organization>
             <organizationUrl>https://github.com/maust</organizationUrl>
         </developer>
+        <developer>
+            <name>Eliezio Oliveira</name>
+            <email>github@eliez.io</email>
+            <organization>private</organization>
+            <organizationUrl>https://github.com/eliezio</organizationUrl>
+        </developer>
     </developers>
 
     <scm>
@@ -51,7 +57,16 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
 
         <dependency>
@@ -61,13 +76,14 @@
         </dependency>
         <dependency>
             <groupId>io.prometheus</groupId>
-            <artifactId>simpleclient_servlet</artifactId>
+            <artifactId>simpleclient_common</artifactId>
             <version>${prometheus.version}</version>
         </dependency>
         <dependency>
             <groupId>io.prometheus</groupId>
             <artifactId>simpleclient_hotspot</artifactId>
             <version>${prometheus.version}</version>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
