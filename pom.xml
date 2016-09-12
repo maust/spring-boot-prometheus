@@ -28,6 +28,12 @@
             <organization>private</organization>
             <organizationUrl>https://github.com/maust</organizationUrl>
         </developer>
+        <developer>
+            <name>Eliezio Oliveira</name>
+            <email>github@eliez.io</email>
+            <organization>private</organization>
+            <organizationUrl>https://github.com/eliezio</organizationUrl>
+        </developer>
     </developers>
 
     <scm>
