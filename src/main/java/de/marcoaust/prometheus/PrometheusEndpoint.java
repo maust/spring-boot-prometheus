@@ -6,34 +6,22 @@ import java.io.Writer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.actuate.endpoint.Endpoint;
+import org.springframework.boot.actuate.endpoint.AbstractEndpoint;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
 
 import io.prometheus.client.CollectorRegistry;
 import io.prometheus.client.exporter.common.TextFormat;
 
-@Component
 @ConfigurationProperties("endpoints.prometheus")
-public class PrometheusEndpoint implements Endpoint<String> {
+class PrometheusEndpoint extends AbstractEndpoint<String> {
 
   private static final Logger log = LoggerFactory.getLogger(PrometheusEndpoint.class);
 
-  private CollectorRegistry collectorRegistry = CollectorRegistry.defaultRegistry;
+  private final CollectorRegistry collectorRegistry;
 
-  @Override
-  public String getId() {
-    return "prometheus";
-  }
-
-  @Override
-  public boolean isEnabled() {
-    return true;
-  }
-
-  @Override
-  public boolean isSensitive() {
-    return true;
+  public PrometheusEndpoint(CollectorRegistry collectorRegistry) {
+    super("prometheus", true /* sensitive */);
+    this.collectorRegistry = collectorRegistry;
   }
 
   @Override
