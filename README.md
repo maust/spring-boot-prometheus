@@ -1,5 +1,5 @@
-# Prometheus-Spring-Boot
-Prometheus-Spring-Boot makes it easy to use Prometheus with Spring Boot. It exposes an /prometheus endpoint with prometheus-compatible metrics just by adding @EnablePrometheusEndpoint to your configuration.
+# Spring-Boot-Prometheus
+Spring-Boot-Prometheus makes it easy to use Prometheus with Spring Boot. It exposes an /prometheus endpoint with prometheus-compatible metrics just by adding @EnablePrometheusEndpoint to your configuration.
 
 [![Build Status](https://travis-ci.org/maust/prometheus-spring-boot.svg?branch=master)](https://travis-ci.org/maust/prometheus-spring-boot)
 
