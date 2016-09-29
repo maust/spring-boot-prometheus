@@ -46,7 +46,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.3.3.RELEASE</version>
+        <version>1.3.7.RELEASE</version>
     </parent>
 
     <properties>
@@ -84,6 +84,18 @@
             <artifactId>simpleclient_hotspot</artifactId>
             <version>${prometheus.version}</version>
             <optional>true</optional>
+        </dependency>
+
+        <!--Test dependencies-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
