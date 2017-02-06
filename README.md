@@ -1,3 +1,6 @@
+# Deprecated
+As this implementation made it into https://github.com/prometheus/client_java there won't be any futher development over here.
+
 # Spring-Boot-Prometheus
 Spring-Boot-Prometheus makes it easy to use Prometheus with Spring Boot. It exposes an /prometheus endpoint with prometheus-compatible metrics just by adding @EnablePrometheusEndpoint to your configuration.
 
